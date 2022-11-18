@@ -1,5 +1,5 @@
-var ex3 = () => {
-  var head = document.querySelector(".heading").innerText;
+const ex3 = () => {
+  const head = document.querySelector(".heading").innerText;
   console.log(head);
   let content = "";
   let string = [...head];

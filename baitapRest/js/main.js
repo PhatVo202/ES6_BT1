@@ -1,13 +1,11 @@
-function getMyEle(ele) {
-  return document.getElementById(ele);
-}
-function bt2(...params) {
+const getMyEle = (ele) => document.getElementById(ele);
+const bt2 = (...params) => {
   let total = 0;
   for (let i = 0; i < params.length; i++) {
     total += params[i];
   }
   return total / params.length;
-}
+};
 
 getMyEle("btnKhoi1").addEventListener("click", () => {
   const math = +getMyEle("inpToan").value;
